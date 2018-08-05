@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteRule index* index.php
+
+ErrorDocument 404 /404.php
+

@@ -1,0 +1,11 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteRule ^view/([0-9a-z-]+)$ http://$1.onekb.net/ [L,R=301]
+RewriteRule ^manage/([0-9a-f]+)$ manage.php?id=$1
+RewriteRule ^manage$ manage.php
+RewriteRule ^update$ update.php
+RewriteRule ^create$ create.php
+RewriteRule ^faq$ faq.php
+
+ErrorDocument 404 /404.php
